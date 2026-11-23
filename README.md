@@ -1,15 +1,25 @@
-<img width="640" height="360" alt="1CF72534-FF47-4962-814D-09AE680273F5_4_5005_c" src="https://github.com/user-attachments/assets/ddc73811-88c3-4c3d-aed4-1ddff1c37166" />
-
-
-<img width="1024" height="768" alt="D77880AB-1528-4113-8011-48661B3B36AB_1_105_c" src="https://github.com/user-attachments/assets/ca4f486e-4e1d-4dfc-a737-138d266945cc" />
-
-<img width="1024" height="768" alt="84228E08-CD35-447C-A6F8-6E76B8CA9C14_1_105_c" src="https://github.com/user-attachments/assets/21e42d9c-fe05-41ef-8850-5c8b4e2a8dac" />
-
 # X500 Survey Drone
 
 A Holybro X500 quadcopter built from the frame up as a survey platform for ecological and geospatial mapping. It supports fieldwork for my M.S. in Geographic Information Science at San Francisco State University.
 
 **Status:** first test flights complete (November 2026). Tuning, sensor integration, and the first mapping mission are next.
+
+<p align="center">
+  <img width="720" alt="X500 hovering during a test flight over a forested site" src="https://github.com/user-attachments/assets/ddc73811-88c3-4c3d-aed4-1ddff1c37166" />
+</p>
+
+## In the field
+
+<table>
+  <tr>
+    <td width="50%"><img alt="X500 on its landing pad, ready for a test flight" src="https://github.com/user-attachments/assets/ca4f486e-4e1d-4dfc-a737-138d266945cc" /></td>
+    <td width="50%"><img alt="Field ground station: QGroundControl on a laptop with the ExpressLRS transmitter" src="https://github.com/user-attachments/assets/21e42d9c-fe05-41ef-8850-5c8b4e2a8dac" /></td>
+  </tr>
+  <tr>
+    <td align="center"><em>Ready for a test flight</em></td>
+    <td align="center"><em>Field ground station: QGroundControl and ExpressLRS transmitter</em></td>
+  </tr>
+</table>
 
 ## Why build it
 
