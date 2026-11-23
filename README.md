@@ -10,6 +10,8 @@ A Holybro X500 quadcopter built from the frame up as a survey platform for ecolo
 
 ## In the field
 
+https://github.com/user-attachments/assets/baba1b58-a19a-430d-8238-f0993afd1e11
+
 <table>
   <tr>
     <td width="50%"><img alt="X500 on its landing pad, ready for a test flight" src="https://github.com/user-attachments/assets/ca4f486e-4e1d-4dfc-a737-138d266945cc" /></td>
@@ -21,7 +23,7 @@ A Holybro X500 quadcopter built from the frame up as a survey platform for ecolo
   </tr>
 </table>
 
-## Why build it
+## Why I'm building it
 
 Data you can trust starts with a platform you understand. I built this aircraft myself to understand the whole system:
 
