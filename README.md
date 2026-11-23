@@ -41,7 +41,7 @@ When something works, I want to know why. When something doesn't, I want to be a
 | Flight controller | Pixhawk 6X |
 | Flight firmware | ArduPilot (ArduCopter 4.7) |
 | Companion computer | NVIDIA Jetson Orin Nano, JetPack 6.2 |
-| Robotics middleware | ROS 2 Humble + MAVROS |
+| Robotics middleware | ROS 2 Humble + MAVROS 2.16.0 |
 | FC ↔ companion link | MAVLink over Ethernet |
 | Positioning | Holybro H-RTK F9P GNSS over DroneCAN |
 | Ground control | QGroundControl |
@@ -68,6 +68,7 @@ The Jetson runs alongside the flight controller and talks to it over MAVLink on 
 | [Field checklist](docs/field-checklist.md) | Packing, site check, power-up order, preflight, survey mission, emergency procedures, power-down |
 | [Test flight protocol](docs/test-protocol.md) | Phased first-flight protocol with abort criteria, and results |
 | [Troubleshooting and incident log](docs/troubleshooting.md) | Every fault hit during the build and its fix, plus the 2026-11-08 loss-of-thrust incident report |
+| [Jetson setup](jetson/README.md) | Ethernet link to the Pixhawk, MAVROS systemd service ([`mavros.service`](jetson/mavros.service)), data streams, versions |
 | [Parameter file](config/X500_2026-11-06_Params.params) | Full ArduCopter parameter export |
 
 ## Flight controller configuration
