@@ -60,6 +60,24 @@ flowchart LR
 
 The Jetson runs alongside the flight controller and talks to it over MAVLink on Ethernet. That link is the foundation for onboard processing and autonomy: the flight controller keeps the aircraft stable, and the Jetson handles mission logic and sensor data.
 
+## Flight controller configuration
+
+Full parameter export: [`config/X500_2026-11-06_Params.params`](config/X500_2026-11-06_Params.params) (ArduCopter 4.7.0, exported from QGroundControl on November 6, 2026).
+
+| Area | Configuration |
+|---|---|
+| Frame | Quad X |
+| GNSS | H-RTK F9P on DroneCAN at 5 Hz; dual compasses, external primary |
+| State estimation | EKF3: GPS for horizontal position and velocity, barometer for altitude, compass for yaw |
+| Companion link | Pixhawk Ethernet enabled with a static IP, streaming MAVLink2 over UDP (port 14550) to the Jetson |
+| RC | ExpressLRS receiver on SERIAL2; receiver-reported RSSI |
+| Switches | Flight modes on channel 6 (Stabilize / AltHold / Loiter), RTL on channel 7, arm/disarm on channel 5 |
+| Power | 4S 5200 mAh battery with a digital power monitor |
+| Failsafes | RC loss → RTL; low battery (14.0 V) → RTL; critical battery (13.6 V) → Land; EKF failsafe → Land; crash and vibration checks on |
+| Return to launch | 15 m RTL altitude |
+
+**Test record at export:** 28 flights, about 13 minutes total flight time (from the flight controller's onboard statistics).
+
 ## Roadmap
 
 - [x] Assemble airframe and power system
@@ -67,7 +85,9 @@ The Jetson runs alongside the flight controller and talks to it over MAVLink on 
 - [x] Bring up Jetson Orin Nano with ROS 2 Humble and MAVROS
 - [x] MAVLink link between flight controller and companion computer
 - [x] First test flights
-- [ ] Extended flights and PID tuning
+- [ ] AutoTune (roll, pitch, and yaw rate gains are still at ArduPilot defaults)
+- [ ] Vibration analysis and harmonic notch filter setup
+- [ ] Enable the configured geofence (100 m ceiling, 300 m radius)
 - [ ] Survey sensor integration
 - [ ] First mapping mission and processed orthomosaic
 - [ ] Compare RTK-tagged imagery against ground control points
