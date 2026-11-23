@@ -1,0 +1,19 @@
+# /etc/systemd/system/mavros.service
+# Runs MAVROS at boot on the Jetson Orin Nano, connected to the Pixhawk 6X over Ethernet.
+# The Pixhawk sends MAVLink2 over UDP to this machine on port 14550 (NET_P1_* parameters).
+# Replace YOUR_USER with the Jetson account that runs ROS 2.
+
+[Unit]
+Description=MAVROS bridge to Pixhawk over Ethernet
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=YOUR_USER
+ExecStart=/bin/bash -c 'source /opt/ros/humble/setup.bash && exec ros2 launch mavros apm.launch fcu_url:=udp://:14550@'
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
