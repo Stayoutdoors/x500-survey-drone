@@ -1,5 +1,8 @@
 # Troubleshooting and Incident Log
 
+**Author:** Garrett Hebert · FAA Part 107 remote pilot · [LinkedIn](https://www.linkedin.com/in/garrett-hebert-285506126/) · [GitHub](https://github.com/Stayoutdoors)
+
+
 Every fault below happened on this build. Each entry records the symptom, how it was diagnosed, and the fix.
 
 ## Build issues
