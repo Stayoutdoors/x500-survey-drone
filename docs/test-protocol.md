@@ -1,5 +1,8 @@
 # First Test Flight Protocol
 
+**Author:** Garrett Hebert · FAA Part 107 remote pilot · [LinkedIn](https://www.linkedin.com/in/garrett-hebert-285506126/) · [GitHub](https://github.com/Stayoutdoors)
+
+
 Used for the first flights after the build, and again after any repair or major change. Fly in order and finish each phase before starting the next.
 
 ## Results
