@@ -1,3 +1,10 @@
+<img width="640" height="360" alt="1CF72534-FF47-4962-814D-09AE680273F5_4_5005_c" src="https://github.com/user-attachments/assets/ddc73811-88c3-4c3d-aed4-1ddff1c37166" />
+
+
+<img width="1024" height="768" alt="D77880AB-1528-4113-8011-48661B3B36AB_1_105_c" src="https://github.com/user-attachments/assets/ca4f486e-4e1d-4dfc-a737-138d266945cc" />
+
+<img width="1024" height="768" alt="84228E08-CD35-447C-A6F8-6E76B8CA9C14_1_105_c" src="https://github.com/user-attachments/assets/21e42d9c-fe05-41ef-8850-5c8b4e2a8dac" />
+
 # X500 Survey Drone
 
 A Holybro X500 quadcopter built from the frame up as a survey platform for ecological and geospatial mapping. It supports fieldwork for my M.S. in Geographic Information Science at San Francisco State University.
