@@ -2,7 +2,7 @@
 
 A Holybro X500 quadcopter built from the frame up as a survey platform for ecological and geospatial mapping. It supports fieldwork for my M.S. in Geographic Information Science at San Francisco State University.
 
-**Status:** first test flights complete (November 2026). Tuning, sensor integration, and the first mapping mission are next.
+**Status:** first-flight test protocol passed in November 2026: hover, AltHold, Loiter, and in-air radio failsafe. Post-incident inspection is in progress; tuning, sensor integration, and the first mapping mission are next.
 
 <p align="center">
   <img width="720" alt="X500 hovering during a test flight over a forested site" src="https://github.com/user-attachments/assets/ddc73811-88c3-4c3d-aed4-1ddff1c37166" />
@@ -60,6 +60,15 @@ flowchart LR
 
 The Jetson runs alongside the flight controller and talks to it over MAVLink on Ethernet. That link is the foundation for onboard processing and autonomy: the flight controller keeps the aircraft stable, and the Jetson handles mission logic and sensor data.
 
+## Documentation
+
+| Document | What it covers |
+|---|---|
+| [Field checklist](docs/field-checklist.md) | Packing, site check, power-up order, preflight, survey mission, emergency procedures, power-down |
+| [Test flight protocol](docs/test-protocol.md) | Phased first-flight protocol with abort criteria, and results |
+| [Troubleshooting and incident log](docs/troubleshooting.md) | Every fault hit during the build and its fix, plus the 2026-11-08 loss-of-thrust incident report |
+| [Parameter file](config/X500_2026-11-06_Params.params) | Full ArduCopter parameter export |
+
 ## Flight controller configuration
 
 Full parameter export: [`config/X500_2026-11-06_Params.params`](config/X500_2026-11-06_Params.params) (ArduCopter 4.7.0, exported from QGroundControl on November 6, 2026).
@@ -84,7 +93,8 @@ Full parameter export: [`config/X500_2026-11-06_Params.params`](config/X500_2026
 - [x] Configure ArduCopter on the Pixhawk 6X
 - [x] Bring up Jetson Orin Nano with ROS 2 Humble and MAVROS
 - [x] MAVLink link between flight controller and companion computer
-- [x] First test flights
+- [x] First-flight test protocol, Phases 1–5 ([results](docs/test-protocol.md#results))
+- [ ] Post-incident inspection and repeat of the test protocol
 - [ ] AutoTune (roll, pitch, and yaw rate gains are still at ArduPilot defaults)
 - [ ] Vibration analysis and harmonic notch filter setup
 - [ ] Enable the configured geofence (100 m ceiling, 300 m radius)
