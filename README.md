@@ -72,6 +72,14 @@ The Jetson runs alongside the flight controller and talks to it over MAVLink on 
 - [ ] First mapping mission and processed orthomosaic
 - [ ] Compare RTK-tagged imagery against ground control points
 
+## Operations
+
+All flights are conducted by an FAA Part 107 certificated remote pilot.
+
+## License
+
+Configuration files and documentation in this repository are released under the [MIT License](LICENSE).
+
 ## Related
 
 Part of my GIS and remote sensing work. See my [profile](https://github.com/Stayoutdoors) for other projects.
