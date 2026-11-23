@@ -1,5 +1,8 @@
 # Field Checklist
 
+**Author:** Garrett Hebert · FAA Part 107 remote pilot · [LinkedIn](https://www.linkedin.com/in/garrett-hebert-285506126/) · [GitHub](https://github.com/Stayoutdoors)
+
+
 The whole field day in order: pack, check the site, power up, preflight, fly, power down. Adapted from the X500 operator's manual.
 
 ## 1. Packing list
