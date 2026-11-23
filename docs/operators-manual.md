@@ -1,5 +1,8 @@
 # X500 Survey UAS: Operator's Manual
 
+**Author:** Garrett Hebert · FAA Part 107 remote pilot · [LinkedIn](https://www.linkedin.com/in/garrett-hebert-285506126/) · [GitHub](https://github.com/Stayoutdoors)
+
+
 Reference manual for the Holybro X500 V2 survey UAS: what each component is, how it is configured on this aircraft, and why. Configuration reflects the aircraft as of November 2026.
 
 **Related documents:** [Field checklist](field-checklist.md) · [Test flight protocol](test-protocol.md) · [Troubleshooting and incident log](troubleshooting.md) · [Parameter file](../config/X500_2026-11-06_Params.params)
