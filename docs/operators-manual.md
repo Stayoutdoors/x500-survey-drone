@@ -441,9 +441,9 @@ Runs the onboard software (ROS 2 and MAVROS today; vision and autonomy later). I
 |---|---|
 | Board | Jetson Orin Nano 8 GB Developer Kit |
 | Storage | 1 TB NVMe SSD |
-| OS | Ubuntu 22.04, L4T R36.5.2 |
+| OS | Ubuntu 22.04.5, L4T R36.5.2 |
 | JetPack components | CUDA 12.6, cuDNN 9.3, TensorRT 10.3 |
-| Robotics | ROS 2 Humble, MAVROS |
+| Robotics | ROS 2 Humble, MAVROS 2.16.0 |
 | Boot target | Headless (`multi-user.target`) |
 | Idle RAM | about 433 MB after trimming (from 698 MB) |
 
@@ -455,6 +455,8 @@ Runs the onboard software (ROS 2 and MAVROS today; vision and autonomy later). I
 - **Network access:** Wi-Fi when available, a Jetson-hosted field hotspot otherwise, and USB-C device mode as a wired backup.
 
 ### Running MAVROS
+
+Service file, network profile and install steps: [Jetson setup](../jetson/README.md).
 
 MAVROS runs as an enabled systemd service, `mavros.service`. It starts at boot and restarts on crash, so no SSH session or tmux is needed.
 
