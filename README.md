@@ -64,6 +64,7 @@ The Jetson runs alongside the flight controller and talks to it over MAVLink on 
 
 | Document | What it covers |
 |---|---|
+| [Operator's manual](docs/operators-manual.md) | Every component and how it is configured: batteries, airframe and power, Pixhawk parameters and failsafes, GPS, ELRS radio, telemetry, ground station, Jetson, software stack, onboard links |
 | [Field checklist](docs/field-checklist.md) | Packing, site check, power-up order, preflight, survey mission, emergency procedures, power-down |
 | [Test flight protocol](docs/test-protocol.md) | Phased first-flight protocol with abort criteria, and results |
 | [Troubleshooting and incident log](docs/troubleshooting.md) | Every fault hit during the build and its fix, plus the 2026-11-08 loss-of-thrust incident report |
