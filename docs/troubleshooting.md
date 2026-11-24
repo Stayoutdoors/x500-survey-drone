@@ -78,7 +78,7 @@ Diagnosis: MAVLink Inspector → `SERVO_OUTPUT_RAW`. `servo1_raw` rose during th
 | Accelerometer recalibration | Pending |
 | Props-off motor test | Pending |
 | Props, arms, frame, landing gear, Jetson standoffs and power pigtail | Pending physical inspection |
-| Ejected battery: check for puffing or dents | Pending |
+| Ejected battery: check for puffing or dents | Passed (2026-11-24): no damage |
 | Outdoor compass and GPS fix check | Pending |
 
 The full [test protocol](test-protocol.md) is repeated before the next mission.
