@@ -1,0 +1,56 @@
+# Keep private and location data out of this public repo.
+
+# Flight logs: they record GPS positions of where the drone flew
+*.bin
+*.BIN
+*.tlog
+*.tlog.raw
+*.log
+*.ulg
+logs/
+dataflash/
+
+# Flight log spreadsheets and exports
+*.xlsx
+*.xls
+*.csv
+*.kml
+*.kmz
+*.gpx
+
+# Mission and geofence files (contain site coordinates)
+*.plan
+*.waypoints
+*.mission
+*.fence
+*.rally
+
+# Survey imagery and photogrammetry output (GPS-tagged). Photos of the
+# drone itself for the README are fine: put them in docs/images/.
+imagery/
+survey/
+raw/
+*.dng
+*.las
+*.laz
+
+# Wi-Fi connection profiles (contain network passwords)
+*.nmconnection
+wpa_supplicant*.conf
+
+# SSH keys, certificates and secrets
+id_rsa*
+id_ed25519*
+*.pem
+*.key
+*.p12
+.env
+.env.*
+secrets.*
+credentials.*
+
+# Editor and OS clutter
+.DS_Store
+*.swp
+*~
+__pycache__/
